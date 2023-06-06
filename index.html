@@ -1,1 +1,81 @@
-Hello World
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(93390219, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/93390219" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <title>Моя сайт визитка</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body background="фон2.jpg" >
+ <div class="container">
+    <img src="попытканомер5.jpg" alt="Моя фотография" class="photo">
+      <h1>QA engeener</h1>
+      <p style="font-size: 24px;">Юлия Усанова </p>
+      <h2 style="font-size: 24px;">Навыки</h2>
+      <ul style="font-size: 18px;">
+        <li>API</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Html</li>
+        <li>MySQL</li>
+        <li>Postman</li>
+        <li>Jira</li>
+        <li>DBbeaver</li>
+        <li>Xml</li>
+        <li>Devtools</li>
+        <li>И другие...</li>
+      </ul>
+     <h3 style="font-size: 24px;">Контакты</h3>
+      <ul class="contact-icons">
+        <li class="links__link">
+          <a href="https://t.me/Uszilla"><img src="телеграм.png" alt="Telegram"></a>
+        </li>
+        <li class="links__link">
+          <a href="https://github.com/Uliya811"> <img src="github.png" alt="Github"></a> 
+        </li>
+        <li class="links__link">
+          <a href="https://www.linkedin.com/in/julia-usanova-332079261/"><img src="in.png" alt="linkedin"></a>  
+        </li>
+        <li class="links__link">
+          <a href="mailto:usanovamladshaya@gmail.com"  title="usanovamladshaya@gmail.com"><img src="конверт.png" alt="Email"></a> 
+        </li>
+        <li class="links__link">
+          <a href="tel:+7 (999) 206-28-91" onclick="showPhoneNumber()"><img src="телефон.png" alt="телефон"title="Call us at +7 (999) 206-28-91"></a>
+        </li>
+      </ul>
+      
+      <script>
+      function showPhoneNumber() {
+        var phoneNumber = document.getElementsByTagName('a')[4].getAttribute('href');
+        alert(phoneNumber.substring(4)); // Отображение номера телефона без префикса "tel:"
+      }
+      </script>
+      
+      <style>
+      .contact-icons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .contact-icons li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      </style>
+      
