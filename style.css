@@ -5,9 +5,9 @@ body {
     padding-left: 150px;
     overflow: hidden;
     margin-top: 50px;
+    transform: scale(0.9); /* Уменьшаем размер на 10% */
+    transform-origin: top; /* Стартовая точка для масштабирования - верх страницы */
   }
-  
-  
   h1 {
     font-size: 40px;
     text-align: center;
@@ -23,6 +23,7 @@ body {
   ul {
     list-style: none;
     padding: 0;
+    white-space: nowrap;
   }
   
   li {
@@ -37,17 +38,22 @@ body {
     margin-left: 200px;
     margin-bottom: 200px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 500px;
-    height: 500px;
-    margin-top: 50px;
+    width: 350px;
+    height: 350px;
+    margin-top: 150px; /* Оставляем отступ сверху равным 0 для текста */
     margin-right: 200px;
     border-radius: 70%;
     border: 2px solid #0d55ff;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  animation: photo-frame 3s infinite;
-  }
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    animation: photo-frame 7s infinite;
+}
+
+.photo-image {
+    margin-top: 300px; /* Увеличьте отступ сверху, чтобы опустить фотографию ниже */
+}
+
   @keyframes photo-frame {
     0% {
       transform: scale(1);
